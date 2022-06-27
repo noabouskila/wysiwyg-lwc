@@ -1,0 +1,33 @@
+<template>
+    <!-- switch button -->
+    <lightning-input  
+        onchange={handleSwitch} 
+        type="toggle"
+        message-toggle-active="<< Source"
+        message-toggle-inactive="Editor >>"
+        class="input-switch"
+    >
+    </lightning-input>
+
+    <!-- textArea -->
+    <template if:true={showSource}>
+        <lightning-textarea 
+            name="input1"
+            label="Enter some text"
+            value={valRichTxt}
+            onchange={handleChangeTextArea}
+            style="
+            --slds-c-textarea-sizing-min-height:160px"
+            class="slds-textarea"
+        >
+        </lightning-textarea>
+    </template>
+
+    <!-- richtext -->
+    <template if:false={showSource}>
+        <lightning-input-rich-text
+            value={valRichTxt}
+            onchange={handleChangeRichText}>
+        </lightning-input-rich-text>
+    </template> 
+</template>
