@@ -6,5 +6,11 @@
         <target>lightning__AppPage</target>
         <target>lightning__RecordPage</target>
         <target>lightning__HomePage</target>
-      </targets>
+        <target>lightning__FlowScreen</target>  
+    </targets>
+    <targetConfigs>
+      <targetConfig targets="lightning__FlowScreen">
+          <property name="markup" type="String" label="Template HTML code" description="Current source code of VF page related to the Template"/>
+      </targetConfig>
+  </targetConfigs>
 </LightningComponentBundle>

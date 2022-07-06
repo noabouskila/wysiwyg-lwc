@@ -1,16 +1,12 @@
 *{
-    background-color: white;
-    /* display: flex; */
-    padding: 1% 2%;
+    background-color:blue;
 }
 .input-switch{
     display: flex;
     justify-content: end;
-    padding-top: 3%;
-    padding-bottom: 0%;
 }
-.slds-textarea {  
-    padding: 1% 2%;
+.slds-textarea{
     border: none;
     border-radius: inherit;
-}  
+    padding: 0;
+}
